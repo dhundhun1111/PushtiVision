@@ -14,7 +14,7 @@ def load_model():
     # model_path = torch.hub.load_state_dict_from_url(model_url, map_location=torch.device('cpu'))
     # model = YOLO(model_path)
     # return model
-    model_url = "https://huggingface.co/dhundhun1111/PushtiVision/resolve/main/best.pt"
+    model_url = "https://huggingface.co/dhundhun1111/PushtiVision/resolve/main/yolov8x.pt"
     
     # Download the model file
     model_path = torch.hub.download_url_to_file(model_url, "best.pt")  # Corrected function
