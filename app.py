@@ -10,9 +10,17 @@ from ultralytics import YOLO
 # Load YOLO Model
 @st.cache_resource()
 def load_model():
-    model_url = "https://huggingface.co/dhundhun1111/PushtiVision/resolve/main/yolov8x.pt"
-    model_path = torch.hub.load_state_dict_from_url(model_url, map_location=torch.device('cpu'))
-    model = YOLO(model_path)
+    # model_url = "https://huggingface.co/dhundhun1111/PushtiVision/resolve/main/yolov8x.pt"
+    # model_path = torch.hub.load_state_dict_from_url(model_url, map_location=torch.device('cpu'))
+    # model = YOLO(model_path)
+    # return model
+    model_url = "https://huggingface.co/dhundhun1111/PushtiVision/resolve/main/best.pt"
+    
+    # Download the model file
+    model_path = torch.hub.download_url_to_file(model_url, "best.pt")  # Corrected function
+    
+    # Load the YOLO model
+    model = YOLO("best.pt")  # Use the correct file path
     return model
 
 # Perform Inference
