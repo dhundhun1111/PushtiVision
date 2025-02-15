@@ -4,7 +4,8 @@ PushtiVision is a deep learning-based application designed to detect food items 
 
 ---
 ## YOLOv5-Based Object Detection Pipeline
-![yolo drawio](https://github.com/user-attachments/assets/8a95e22d-4f67-4ce4-80a1-bf545a369c77)
+![yolo drawio](https://github.com/user-attachments/assets/8b84e70e-d798-42d1-9c26-b7de110260ff)
+
 
 
 ## Table of Contents
