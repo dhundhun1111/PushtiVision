@@ -43,7 +43,7 @@ food_calories = {
 }
 
 # Streamlit UI Customization
-st.set_page_config(page_title="NutriVision Inference", layout="centered")
+st.set_page_config(page_title="Pushti Vision", layout="centered")
 st.markdown("""
     <style>
         body {
